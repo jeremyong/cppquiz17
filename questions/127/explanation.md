@@ -1,4 +1,4 @@
-[expr.prim.lambda]§8.5.1¶18 says
+[expr.prim.lambda.capture]§8.1.5.2¶14 says
 Every occurrence of `decltype((x))` where `x` is a possibly parenthesized id-expression that names an entity of automatic storage duration is treated as if `x` were transformed into an access to a corresponding data member of the closure type that would have been declared if `x` were an odr-use of the denoted entity.
 
 So additional parentheses, as the in the code snippet above, are ignored.
