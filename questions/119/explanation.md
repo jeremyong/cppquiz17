@@ -1,4 +1,4 @@
-As defined in [basic.scope.pdecl]§3.3.2¶1, the point of name declaration is after its
+As defined in [basic.scope.pdecl]§6.3.2¶1, the point of name declaration is after its
 complete declarator and before its initialisation. This
 means that line 4 is valid C++, because it's possible
 to initialise the variable `p` with the address of an existing

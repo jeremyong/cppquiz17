@@ -1,3 +1,3 @@
-Is `foo` called both times or just once? The C++11 standard says this in [dcl.fct.default]§8.3.6¶9: "Default arguments are evaluated each time the function is called."
+Is `foo` called both times or just once? The C++ standard says this in [dcl.fct.default]§11.3.6¶9: "A default argument is evaluated each time the function is called with no argument for the corresponding parameter."
 
 Thus, `foo` is called twice.

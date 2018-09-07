@@ -1,6 +1,7 @@
-According to [dcl.type.simple]§7.1.6.2¶4 in the C++ standard:
+According to [dcl.type.simple]§10.1.7.2¶4 in the C++ standard:
 "The type denoted by decltype(e) is deﬁned as follows:
-— if e is an unparenthesized id-expression or an unparenthesized class member access (5.2.5), decltype(e) is the type of the entity named by e. If there is no such entity, or if e names a set of overloaded functions, the program is ill-formed;
+- if e is an unparenthesized id-expression naming a structured binding ([dcl.struct.bind]§11.5), decltype(e) is the referenced type as given in the specification of the structured binding declaration;
+— if e is an unparenthesized id-expression or an unparenthesized class member access ([expr.ref]§8.2.5), decltype(e) is the type of the entity named by e. If there is no such entity, or if e names a set of overloaded functions, the program is ill-formed;
 — otherwise, if e is an xvalue, decltype(e) is T&&, where T is the type of e;
 — otherwise, if e is an lvalue, decltype(e) is T&, where T is the type of e;
 — otherwise, decltype(e) is the type of e."
