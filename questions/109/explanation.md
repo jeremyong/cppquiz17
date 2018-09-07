@@ -1,7 +1,7 @@
 The compiler tries to deduce `T` for every parameter and checks if the deduced types match. Because a lambda is of completely different type, it cannot be matched against `std::function<void(T)>` and the deduction process fails.
 This problem can be fixed by turning the first parameter into a so-called nondeduced context.
 
-[temp.deduct.type]§14.8.2.5¶5 in the standard:
+[temp.deduct.type]§17.8.2.5¶5 in the standard:
 "The nondeduced contexts are:
 
 - The nested-name-specifier of a type that was specified using a qualified-id.
