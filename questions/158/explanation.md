@@ -1,6 +1,6 @@
-Since C++11 ([vector.cons]§23.3.6.2¶3 in the standard), `std::vector` has a one parameter constructor
+Since C++11, `std::vector` has a one parameter constructor ( + allocator). [vector.cons]§26.3.11.2¶3 in the standard):
 
-`explicit vector( size_type n )`
+`explicit vector(size_type n, const Allocator& = Allocator())`
 
 which constructs a vector with `n` value-initialized elements. Each value-initialization calls the default `Foo` constructor, resulting in the output `aaaaa` .
 
