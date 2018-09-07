@@ -1,6 +1,11 @@
 `a1` is default initialized, as described in [dcl.init]§11.6¶12.
 
-`a2` doesn't actually use the initializer_list constructor with a list of zero elements, but the default constructor, as described by the first option of the list above.
+`a2` doesn't actually use the initializer_list constructor with a list of zero elements, but the default constructor:
+[dcl.init.list]§11.6¶3:
+List-initialization of an object or reference of type T is defined as follows:
+- (...)
+- Otherwise, if the initializer list has no elements and T is a class type with a default constructor, the object is value-initialized.
+- Otherwise, if T is a specialization of std::initializer_list<E>, the object is constructed as described below.
 
 `a3`'s and `a4`'s constructor is chosen in overload resolution, as described in [over.match.list]§16.3.1.7:
 
